@@ -1,0 +1,86 @@
+.customers {
+  box-sizing: border-box;
+
+  padding: 30px 40px 40px ;
+  background-color: #fff;
+
+  border-radius: 30px;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  width: 100%;
+  @include onMobile {
+    padding: 20px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    @include onMobile {
+      display: block;
+    }
+  }
+
+  &__info {
+    @include onMobile {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 33px;
+    letter-spacing: $letter-space;
+  }
+
+  &__description {
+    color: $light-sea-green;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: $letter-space;
+  }
+
+  &__search {
+    position: relative;
+    height: 38px;
+
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 16px;
+      background: url(/src/images/search.svg) center / contain no-repeat;
+    }
+  }
+
+  &__search-input {
+    box-sizing: border-box;
+    outline: none;
+    border-color: #fff;
+
+    background-color: #F9FBFF;
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: transparent;
+
+    &::placeholder {
+      color: #B5B7C0;
+      font-weight: 400;
+      font-size: 12px;
+    }
+    
+    @include onMobile {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__table {
+    margin-bottom: 30px;
+  }
+}

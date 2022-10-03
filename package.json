@@ -1,0 +1,33 @@
+{
+  "name": "crm_dashboard_layout",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "init": "mate-scripts init",
+    "start": "mate-scripts start",
+    "lint": "mate-scripts lint",
+    "test:only": "mate-scripts test",
+    "build": "mate-scripts build",
+    "deploy": "mate-scripts deploy",
+    "update": "mate-scripts update",
+    "postinstall": "npm run update",
+    "test": "npm run lint && npm run test:only"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@linthtml/linthtml": "^0.9.0",
+    "eslint": "^8.24.0",
+    "htmlhint": "^1.1.4",
+    "colors": "^1.3.3",
+    "eslint-plugin-node": "^9.0.1",
+    "gh-pages": "2.0.0",
+    "gulp-htmllint": "0.0.16",
+    "node-sass": "^4.14.1",
+    "parcel": "^1.12.4",
+    "stylelint": "^13.5.0",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-scss": "^3.17.2"
+  }
+}

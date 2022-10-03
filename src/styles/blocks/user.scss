@@ -1,0 +1,30 @@
+.user {
+  display: flex;
+
+  margin-bottom: 72px;
+  &__photo {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+  }
+  
+  &__info {
+    padding-left: 12px;
+  }
+
+  &__name {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  &__description {
+    color: $light-grey;
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+
+  @include onMobile {
+    margin: 0;
+  }
+}

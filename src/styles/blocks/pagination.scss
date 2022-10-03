@@ -1,0 +1,71 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include onMobile {
+    display: block;
+    text-align: center;
+  }
+  
+  &__info {
+    color: $light-grey;
+  
+    font-weight: 500;
+    font-size: 14px;
+
+    @include onMobile {
+      margin-bottom: 10px;
+    }
+  }
+  
+  &__nav {
+    display: flex;
+    align-items: center;
+  
+    & :not(:last-child) {
+      margin-right: 12px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    width: 26px;
+    height: 24px;
+
+    text-decoration: none;
+    color: #404B52;
+    font-weight: 500;
+    font-size: 12px;
+
+    background-color: #F5F5F5;
+
+    border: 1px solid #eee;
+    border-radius: 4px;
+
+
+    &:hover {
+      border-color: #5932EA;
+    }
+    &:active {
+      border-color: #5932EA;
+    }
+
+    &:focus {
+      background-color: #5932EA;
+      border-color: #5932EA;
+      color: #eee;
+    }
+
+    &--active {
+      background-color: #5932EA;
+      border-color: #5932EA;
+      color: #eee;
+    }
+  }
+
+}
